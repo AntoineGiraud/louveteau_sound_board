@@ -1,0 +1,9 @@
+body {
+  padding-top: 80px;
+}
+.btn-sm, .btn-group-sm > .btn {
+  padding: 0.2rem 0.4rem;
+  font-size: 0.8rem;
+  line-height: 1;
+  border-radius: 0.2rem;
+}
