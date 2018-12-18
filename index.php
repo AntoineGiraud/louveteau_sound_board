@@ -40,39 +40,17 @@
     <main role="main" class="container">
       <div class="starter-template">
         <h2>Thème</h2>
-        <div class="row">
-            <div style="cursor: pointer;" class="col-sm-2" id="s.name" ng-repeat="s in sounds.themes" ng-click="Sounds.playTheme(s.audio, 0.7, 1)">
-                <div class="card">
-                  <img class="card-img-top" alt="100%x60" style="height: 60px; width: 100%; display: block;" src="http://lorempicsum.com/simpson/100/60/1" data-holder-rendered="true">
-                  <div class="card-body">
-                    <p class="card-text">{{s.name}}</p>
-                  </div>
-                </div>
-            </div>
-        </div>
+        <p>
+                <span style="margin-right:10px;" ng-repeat="s in sounds.themes" class="btn btn-lg btn-primary" ng-click="Sounds.playTheme(s.audio, 0.7, 1)">{{s.name}}</span>
+        </p>
         <h2>Events</h2>
-        <div class="row">
-            <div style="cursor: pointer;" class="col-sm-2" id="s.name" ng-repeat="s in sounds.events" ng-click="Sounds.playTheme(s.audio, 1, 0)">
-                <div class="card">
-                  <img class="card-img-top" alt="100%x60" style="height: 60px; width: 100%; display: block;" src="http://lorempicsum.com/simpson/100/60/1" data-holder-rendered="true">
-                  <div class="card-body">
-                    <p class="card-text">{{s.name}}</p>
-                  </div>
-                </div>
-            </div>
-        </div>
+        <p>
+                <span style="margin-right:10px;" ng-repeat="s in sounds.events" class="btn btn-lg btn-primary" ng-click="Sounds.playTheme(s.audio, 1, 0)">{{s.name}}</span>
+        </p>
         <h2>Petits sons</h2>
-        <div class="row">
-            <div style="cursor: pointer;" class="col-sm-2" id="s.name" ng-repeat="s in sounds.beeps" ng-click="Sounds.play(s.audio)">
-                <div class="card">
-                  <img class="card-img-top" alt="100%x60" style="height: 60px; width: 100%; display: block;" src="http://lorempicsum.com/simpson/100/60/1" data-holder-rendered="true">
-                  <div class="card-body">
-                    <p class="card-text">{{s.name}}</p>
-                  </div>
-                </div>
-            </div>
-        </div>
-
+        <p>
+            <span style="margin-right:10px;" ng-repeat="s in sounds.beeps" class="btn btn-lg btn-primary" ng-click="Sounds.play(s.audio)">{{s.name}}</span>
+        </p>
       </div>
     </main><!-- /.container -->
 
